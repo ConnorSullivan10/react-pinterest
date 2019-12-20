@@ -23,7 +23,11 @@ class BoardForm extends React.Component {
     }
   }
 
-  // componentDidUpdate(prevProps)
+  // componentDidUpdate(prevProps) {
+  //   if ((prevProps.boardToEdit.id !== this.props.boardToEdit.id) && this.props.editMode) {
+  //     this.setState({ boardName: this.props.boardToEdit.name, boardDescription: this.props.boardToEdit.description });
+  //   }
+  // }
 
   saveBoardEvent = (e) => {
     const { addBoard } = this.props;
